@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
   downloadPdf() {
-    const pdfUrl = 'assets/Achraf_Triki_CV.pdf'; // Update with your local PDF file path
+    const pdfUrl = 'assets/Achraf_Triki_CV.pdf'; // Update with your local PDF file path cv file
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'Achraf_Triki_CV.pdf';
