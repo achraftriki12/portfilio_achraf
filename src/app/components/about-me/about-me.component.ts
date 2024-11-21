@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AboutMeComponent {
   downloadPdf() {
-    const pdfUrl = 'assets/triki achraf cv.pdf'; // Update with your local PDF file path
+    const pdfUrl = 'assets/Achraf_Triki_CV.pdf'; // Update with your local PDF file path
     const link = document.createElement('a');
     link.href = pdfUrl;
-    link.download = 'triki achraf cv.pdf';
+    link.download = 'Achraf_Triki_CV.pdf';
     link.click();
     document.body.removeChild(link);
   }
