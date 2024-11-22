@@ -19,7 +19,7 @@ export class ProjectsComponent {
         'IA',
         'Transformers, Computer vision, GNN, CNN',
         '2024',
-        '-',
+        'https://github.com/achraftriki12/graph-transformers',
         ' Developed a Graph Transformer-based model for embryo classification, achieving 85% accuracy. Reviewed 15+ research papers, segmented 1,000 embryo images into patches, and extracted node and edge features to create detailed graph representations. The approach outperformed traditional CNN models by 5%. ',
         ['thumbnail.jpg','image 1.jpg','image 2.jpg', 'image 3.jpg'],
         "",
