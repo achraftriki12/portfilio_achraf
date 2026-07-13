@@ -29,6 +29,15 @@
     object-fit: cover;
 }
 
+.hero-tagline {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 16px;
+    padding: 0 10px;
+    text-transform: none;
+}
+
 .content {
     color: white;
 }

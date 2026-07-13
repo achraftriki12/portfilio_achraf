@@ -17,6 +17,7 @@ import { SkillsListComponent } from './components/skills-list/skills-list.compon
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { WhatIOfferComponent } from './components/what-i-offer/what-i-offer.component';
 import { ListComponent } from './components/what-i-offer/list/list.component';
+import { ResearchBlogComponent } from './components/research-blog/research-blog.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -34,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     ContactUsComponent,
     WhatIOfferComponent,
     ListComponent,
+    ResearchBlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule,FormsModule],
   providers: [],

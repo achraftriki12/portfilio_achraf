@@ -9,3 +9,19 @@
 .container{
     margin-top: 2vh;
 }
+
+.research-spotlight {
+    border-left: 3px solid #ffb400;
+    padding-left: 12px;
+}
+
+.research-spotlight a {
+    color: #ffb400;
+    display: inline-block;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+.research-spotlight a:hover {
+    text-decoration: underline;
+}

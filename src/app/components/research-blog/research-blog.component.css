@@ -1,0 +1,136 @@
+h1 span {
+  color: rgb(255, 180, 0);
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 900 !important;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-bg {
+  font-size: 120px;
+  left: 0;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  position: absolute;
+  right: 0;
+  top: 7vh;
+  text-transform: uppercase;
+  font-weight: 800;
+  transform: translateY(-50%);
+  color: hsla(0, 0%, 100%, 0.07);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  min-height: 60vh;
+  height: auto;
+  padding-top: 2%;
+  position: relative;
+}
+
+.post-card {
+  backdrop-filter: blur(0.95vw);
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.post-image {
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.post-image img {
+  border-radius: 15px;
+  height: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.post-content {
+  color: #fff;
+  padding: 20px;
+}
+
+.tag {
+  background-color: rgba(255, 180, 0, 0.15);
+  border: 1px solid #ffb400;
+  border-radius: 20px;
+  color: #ffb400;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 4px 14px;
+  text-transform: uppercase;
+}
+
+.post-content h3 {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.post-meta {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.post-content p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.post-link {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #ffb400;
+  border-radius: 30px;
+  color: #ffb400;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 8px;
+  padding: 10px 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.post-link:hover {
+  background-color: #ffb400;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .title-bg {
+    font-size: 60px;
+    top: 3%;
+  }
+
+  .post-image img {
+    max-height: 220px;
+  }
+}
