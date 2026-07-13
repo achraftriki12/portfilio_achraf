@@ -16,14 +16,15 @@
 
 
 .avatar {
-    height: 200px;
-    width: 200px;
+    width: 220px;
+    aspect-ratio: 9 / 16;
+    height: auto;
     margin: 0 auto; /* Centrer l'avatar sur petits écrans */
     position: relative;
 }
 
 .avatar img {
-    border-radius: 50%;
+    border-radius: 20px;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -108,23 +109,11 @@
 
 
 
-.avatar {
-    
-    height: 250px;
+.avatar img {
     position: relative;
-    width: 250px;
-  }
-  
-  .avatar img {
-    border-radius: 9999px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    width: 100%;
     z-index: 2;
   }
-  
+
   @keyframes cycle-colors {
     0% { border-color: hsl(0, 100%, 50%); }
     25% { border-color: hsl(90, 100%, 50%); }
@@ -143,17 +132,17 @@
   .avatar::before,
   .avatar::after {
     animation: pulse 3s linear infinite;
-    border: #fff solid 8px;
-    border-radius: 9999px;
+    border: #fff solid 6px;
+    border-radius: 28px;
     box-sizing: border-box;
     content: ' ';
-    height: 140%;
-    left: -20%;
+    height: 112%;
+    left: -6%;
     opacity: .6;
     position: absolute;
-    top: -20%;
-    transform: scale(0.714);
-    width: 140%;
+    top: -6%;
+    transform: scale(0.9);
+    width: 112%;
     z-index: 1;
   }
   
@@ -166,6 +155,10 @@
         margin-top: 30vh;}
     .row {
         display: block;
+    }
+
+    .avatar {
+        width: 170px;
     }
 
     .content {
