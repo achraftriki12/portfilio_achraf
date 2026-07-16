@@ -54,18 +54,18 @@ export class ExperiencePageComponent {
         ]
       ),
       new Expinfo(
+        'Baccalaureate Degree',
+        'Aug 2020',
+        [
+          'Baccalaureate Degree in Mathematics.'
+        ]
+      ),
+      new Expinfo(
         'Mobile Developer Intern - Telnet Holding',
         'Jul 2023 - Sep 2023',
         [
           'Designed and developed an Android application to create an EMV tag dictionary using Kotlin and enhancing user experience through an intuitive interface.',
           'Analyzed and identified potential values associated with EMV tags and optimizing tag detection for faster transactions.'
-        ]
-      ),
-      new Expinfo(
-        'Baccalaureate Degree',
-        'Aug 2020',
-        [
-          'Baccalaureate Degree in Mathematics.'
         ]
       )
     ];
