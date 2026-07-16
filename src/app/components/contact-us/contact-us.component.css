@@ -136,6 +136,17 @@
   font-weight: 500;
 }
 
+.info-link {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  width: fit-content;
+}
+
+.info-link:hover {
+  color: #ffb400;
+  text-decoration: underline;
+}
+
 .social-row {
   display: flex;
   gap: 12px;
