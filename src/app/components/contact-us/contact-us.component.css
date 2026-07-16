@@ -244,6 +244,14 @@
   .contact_us ::placeholder {
     color: #b4b4b4;
   }
+
+  .contact_us .field-error {
+    color: #ff6b6b !important;
+    font-size: 13px !important;
+    text-align: left;
+    margin-top: 6px;
+    padding-left: 10px;
+  }
   
   .contact_us .text-blk.contact-head {
     font-size: 36px;

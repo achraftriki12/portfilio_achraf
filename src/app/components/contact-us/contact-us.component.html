@@ -6,24 +6,26 @@
 
         <div class="responsive-container-block">
           <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
-            <p class="text-blk input-title">First Name</p>
-            <input class="input" name="FirstName" [(ngModel)]="contactFormModel.firstName" required>
+            <label class="text-blk input-title" for="firstName">First Name</label>
+            <input class="input" id="firstName" name="FirstName" [(ngModel)]="contactFormModel.firstName" required>
           </div>
           <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Last Name</p>
-            <input class="input" name="LastName" [(ngModel)]="contactFormModel.lastName" required>
+            <label class="text-blk input-title" for="lastName">Last Name</label>
+            <input class="input" id="lastName" name="LastName" [(ngModel)]="contactFormModel.lastName" required>
           </div>
           <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Email</p>
-            <input class="input" name="Email" [(ngModel)]="contactFormModel.email" required>
+            <label class="text-blk input-title" for="email">Email</label>
+            <input class="input" id="email" type="email" name="Email" #emailField="ngModel" [(ngModel)]="contactFormModel.email" required email>
+            <p class="field-error" *ngIf="emailField.invalid && emailField.touched">Please enter a valid email address.</p>
           </div>
           <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <p class="text-blk input-title">Phone No.</p>
-            <input class="input" name="PhoneNumber" [(ngModel)]="contactFormModel.phone" required>
+            <label class="text-blk input-title" for="phone">Phone No.</label>
+            <input class="input" id="phone" type="tel" name="PhoneNumber" #phoneField="ngModel" [(ngModel)]="contactFormModel.phone" required pattern="^\+?[0-9\s]{8,15}$">
+            <p class="field-error" *ngIf="phoneField.invalid && phoneField.touched">Please enter a valid phone number.</p>
           </div>
           <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
-            <p class="text-blk input-title">Message</p>
-            <textarea class="textinput" name="Message" [(ngModel)]="contactFormModel.message" required></textarea>
+            <label class="text-blk input-title" for="message">Message</label>
+            <textarea class="textinput" id="message" name="Message" [(ngModel)]="contactFormModel.message" required></textarea>
           </div>
         </div>
 
