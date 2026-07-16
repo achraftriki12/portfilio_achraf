@@ -1,36 +1,53 @@
 <div class="contact_us">
-  <div class="responsive-container-block container">
-    <form (ngSubmit)="sendEmail(contactForm)" #contactForm="ngForm" class="form-box">
-      <div class="container-block form-wrapper">
-        <p class="text-blk contact-head">CONTACT <span style="color: #ffb400;">ME</span></p>
+  <div class="contact-card">
 
-        <div class="responsive-container-block">
-          <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6">
-            <label class="text-blk input-title" for="firstName">First Name</label>
-            <input class="input" id="firstName" name="FirstName" [(ngModel)]="contactFormModel.firstName" required>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <label class="text-blk input-title" for="lastName">Last Name</label>
-            <input class="input" id="lastName" name="LastName" [(ngModel)]="contactFormModel.lastName" required>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <label class="text-blk input-title" for="email">Email</label>
-            <input class="input" id="email" type="email" name="Email" #emailField="ngModel" [(ngModel)]="contactFormModel.email" required email>
-            <p class="field-error" *ngIf="emailField.invalid && emailField.touched">Please enter a valid email address.</p>
-          </div>
-          <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-            <label class="text-blk input-title" for="phone">Phone No.</label>
-            <input class="input" id="phone" type="tel" name="PhoneNumber" #phoneField="ngModel" [(ngModel)]="contactFormModel.phone" required pattern="^\+?[0-9\s]{8,15}$">
-            <p class="field-error" *ngIf="phoneField.invalid && phoneField.touched">Please enter a valid phone number.</p>
-          </div>
-          <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12">
-            <label class="text-blk input-title" for="message">Message</label>
-            <textarea class="textinput" id="message" name="Message" [(ngModel)]="contactFormModel.message" required></textarea>
+    <div class="contact-left">
+      <div class="dots-pattern"></div>
+      <h2 class="contact-title">GET IN <span>TOUCH.</span></h2>
+      <a class="cta-btn" href="mailto:achraff.trikii@gmail.com">
+        <span class="cta-arrow"><i class="fa-solid fa-arrow-up"></i></span>
+        Start a conversation
+      </a>
+    </div>
+
+    <div class="contact-right">
+
+      <div class="info-row">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info-text">
+          <span class="info-label">Address</span>
+          <span class="info-value">Le Port-Marly, Paris, France</span>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="info-text">
+          <span class="info-label">Phone</span>
+          <span class="info-value">+33 07 44 88 73 51</span>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="info-text">
+          <span class="info-label">Mail</span>
+          <span class="info-value">achraff.trikii@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-icon"><i class="fa-solid fa-thumbs-up"></i></div>
+        <div class="info-text">
+          <span class="info-label">Follow Us</span>
+          <div class="social-row">
+            <a href="https://github.com/achraftriki12" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/achraftriki12" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
         </div>
-
-        <button class="submit-btn" type="submit" [disabled]="!contactForm.valid">Send Message</button>
       </div>
-    </form>
+
+    </div>
+
   </div>
 </div>
